@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="index.scss">
+    <script src="index.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <section class="nav">
+        <ul>
+            <li><i class="fa-solid fa-house"></i><span class="menu">Início</span></li>
+            <li><i class="fa-solid fa-circle-info"></i><span class="menu">Sobre</span></li>
+        </ul>
+    </section>
+    <div class="container">
+        <div class="box">
+            <div id="tela">0</div>
+            <div id="keys">
+                <input type="button" value="CLEAR" id="clear" onclick="reset(0)">
+                <input type="button" value="DEL" id="del" onclick="reset(1)">
+                <input type="button" value="%" id="operators" onclick="add_value(this)">
+                <input type="button" value="÷" id="operators" onclick="add_value(this)">
+
+                <input type="button" value="7" onclick="add_value(this)">
+                <input type="button" value="8" onclick="add_value(this)">
+                <input type="button" value="9" onclick="add_value(this)">
+
+                <input type="button" value="+" id="operators" onclick="add_value(this)">
+
+                <input type="button" value="4" onclick="add_value(this)">
+                <input type="button" value="5" onclick="add_value(this)">
+                <input type="button" value="6" onclick="add_value(this)">
+
+                <input type="button" value="-" id="operators" onclick="add_value(this)">
+
+                <input type="button" value="1" onclick="add_value(this)">
+                <input type="button" value="2" onclick="add_value(this)">
+                <input type="button" value="3" onclick="add_value(this)">
+
+                <input type="button" value="x" id="operators" onclick="add_value(this)">
+
+                <input type="button" value="." onclick="add_value(this)">
+
+                <input type="button" value="0" onclick="add_value(this)">
+
+                <input type="button" id="enter" value="=" onclick="calcular()">
+
+                <input type="button" value="(" id="operators" onclick="add_value(this)">
+                <input type="button" value=")" id="operators" onclick="add_value(this)">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+            <div>
+                <p>Spiro Comunity © <a href="https://github.com/ocesarodolfo" target="_blank">Rodolfo Cesar Cordeiro</a></p>
+            </div>
+    </footer>
+</body>
+
+</html>

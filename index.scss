@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: black url('https://www.w3schools.com/css/mountain.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    margin-bottom: auto;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    padding: 10px 0;
+    color: white;
+    top: 0;
+}
+
+.nav ul, li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav ul li {
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.nav ul li .menu {
+    margin: 0 0 0 10px;
+}
+
+.nav ul li span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav li:hover span::after {
+    //transform: scaleX(1);
+}
+
+.nav li:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: fit-content;
+    padding-top: 50px;
+}
+
+.container .box {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    background-color: rgb(0, 0, 0);
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px 10px;
+    max-inline-size: 22rem;
+}
+
+.container .box #tela {
+    margin: 10px auto 10px auto;
+    width: 90%;
+    max-width: 90%;
+    font-size: 2rem;
+    text-align: end;
+    background: hsla(0, 0%, 100%, 0.3);
+    color: hsl(255, 100%, 100%);
+    padding-block-start: 0.25rem;
+    padding-block-end: 0.25rem;
+    padding-inline-end: 0.75rem;
+    word-wrap: break-word;
+    border-radius: 10px;
+}
+
+.container .box #keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container .box #keys input {
+    box-shadow: 3px 3px 3px 0px rgba(0, 157, 255, 0.7);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    border: 0;
+    transition: 0.05s ease-in-out;
+}
+
+.container .box #keys #enter{
+    grid-column: span 2;
+    grid-row: span 2;
+    border-radius: 15px;
+    background-color: rgba(147, 253, 133, 0.908);
+}
+
+.container .box #keys #del{
+    background-color: rgb(253, 199, 133);
+}
+
+.container .box #keys #clear{
+    background-color: rgb(255, 95, 95);
+}
+
+.container .box #keys #operators{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.container .box #keys input:hover {
+    transform: scale(0.95);
+    box-shadow: unset;
+}
+
+.container .box #keys input:focus {
+    outline: none;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    color: white;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+footer div {
+    max-width: 400px;
+    display: inline-block;
+}
+
+footer div h3 {
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: unset
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+    .nav {
+        justify-content: center;
+    }
+}
