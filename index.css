@@ -51,7 +51,7 @@ html, body {
 }
 
 .nav li:hover span::after {
-    //transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .nav li:hover {
