@@ -95,11 +95,13 @@ html, body {
 }
 
 .container .box #keys {
+    font-family: 'FontAwesome';
     display: grid;
+    position: relative;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.container .box #keys input {
+.container .box #keys input, .button {
     box-shadow: 3px 3px 3px 0px rgba(0, 157, 255, 0.7);
     padding: 10px;
     margin: 10px;
@@ -119,12 +121,12 @@ html, body {
     background-color: rgba(147, 253, 133, 0.908);
 }
 
-.container .box #keys #del{
-    background-color: rgb(253, 199, 133);
-}
-
 .container .box #keys #clear{
     background-color: rgb(255, 95, 95);
+}
+
+.container .box #keys #del{
+    background-color: rgb(253, 199, 133);
 }
 
 .container .box #keys #operators{
@@ -132,7 +134,7 @@ html, body {
 }
 
 
-.container .box #keys input:hover {
+.container .box #keys input:hover, .button:hover {
     transform: scale(0.95);
     box-shadow: unset;
 }
