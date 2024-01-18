@@ -109,6 +109,7 @@ html, body {
     font-weight: bold;
     border: 0;
     transition: 0.05s ease-in-out;
+    font-size: 18px;
 }
 
 .container .box #keys #enter{
